@@ -28,7 +28,7 @@ class GigaChatRepo {
       // Step 2: Make the POST request
       final response = await http.post(
         Uri.parse(
-          'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCZOrtazGRxU1nuSh6mqTxEgPTW6v0Y9NE',
+          'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=$apikey',
         ),
         body: json.encode(
           {
